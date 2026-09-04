@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Laiba Yasin 🎀</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Georgia,serif;text-align:center;color:#5b3150;background:linear-gradient(135deg,#ffe6f2,#f7e8ff,#e5f3ff);overflow-x:hidden}
+.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}.card{width:min(92%,650px);padding:40px 25px;border-radius:30px;background:rgba(255,255,255,.82);box-shadow:0 15px 45px rgba(120,60,100,.18)}
+h1{font-size:clamp(2.4rem,9vw,4.5rem);margin:10px 0;color:#c85b91}h2{color:#a64d82}.subtitle{font-size:1.15rem;line-height:1.7}
+button{border:0;border-radius:999px;padding:15px 28px;margin-top:18px;background:#d8669b;color:#fff;font-size:1rem;cursor:pointer;box-shadow:0 7px 20px rgba(200,90,145,.3)}
+#letter{display:none;text-align:left;line-height:1.8;font-size:1.05rem}.center{text-align:center}.signature{text-align:center;font-weight:bold;color:#c85b91;font-size:1.15rem}
+.balloon{position:fixed;bottom:-120px;font-size:55px;animation:float 7s linear infinite;pointer-events:none}.b1{left:7%}.b2{left:28%;animation-delay:2s}.b3{left:55%;animation-delay:1s}.b4{left:80%;animation-delay:3s}
+@keyframes float{to{transform:translateY(-120vh) rotate(12deg)}}.heart{position:fixed;font-size:22px;animation:fall 4s linear forwards;pointer-events:none}@keyframes fall{0%{transform:translateY(-10vh);opacity:1}100%{transform:translateY(110vh) rotate(360deg);opacity:0}}
+.small{font-size:.9rem;opacity:.75}
+</style>
+</head>
+<body>
+<div class="balloon b1">🎈</div><div class="balloon b2">🎈</div><div class="balloon b3">🎈</div><div class="balloon b4">🎈</div>
+<section class="screen" id="welcome"><div class="card">
+<div style="font-size:55px">🎂🎀✨</div><h1>Happy Birthday,<br>Laiba Yasin!</h1>
+<p class="subtitle">A little surprise for one of the most special people in my life. 💗</p>
+<button onclick="openSurprise()">🎁 Click for a Surprise</button><p class="small">Made with lots of love 💕</p>
+</div></section>
+<section class="screen" id="letter"><div class="card">
+<div class="center" style="font-size:45px">💌🌸</div><h2 class="center">To My Most Special Friend ❤️</h2>
+<p>Happy Birthday, Laiba Yasin! 🎂💗</p>
+<p>Some people come into our lives and become friends, but some people become family. And Laiba, you are that person for me. 🥹❤️</p>
+<p>Our friendship started on <b>5th February</b>, and honestly, I never knew that one day you would become such an important part of my life. From listening to all my things to understanding me, giving me advice, supporting me and making me smile, you have always been there. 🫶🏻</p>
+<p>You listen to me like a best friend, understand me like a sister, and care for me in a way that I will always be grateful for. ❤️</p>
+<p>I really hope our friendship stays just as special for years and years. No matter where life takes us, I hope we always have the same bond, the same craziness, and the same comfort with each other. 🥺✨</p>
+<p>May Allah bless you with endless happiness, protect you from every sadness, and give you everything your heart wishes for. Ameen. 🤲🏻💗</p>
+<p>Thank you for listening. Thank you for understanding. Thank you for always being there. And most importantly, <b>thank you for being my friend.</b> 🫶🏻</p>
+<p class="center"><b>You are not just my friend…<br>you are one of the most beautiful parts of my life. ❤️</b></p>
+<p class="signature">Happy Birthday, Laiba! 🎂🎈💕<br>From someone who is really lucky to have you. 🥹💗</p>
+</div></section>
+<script>
+function openSurprise(){document.getElementById("welcome").style.display="none";document.getElementById("letter").style.display="flex";
+for(let i=0;i<60;i++){setTimeout(()=>{let h=document.createElement("div");h.className="heart";h.textContent=["💗","💕","✨","🎀","🎉"][Math.floor(Math.random()*5)];h.style.left=Math.random()*100+"vw";h.style.animationDuration=(2.5+Math.random()*2.5)+"s";document.body.appendChild(h);setTimeout(()=>h.remove(),5500)},i*50)}}
+</script>
+</body></html>
